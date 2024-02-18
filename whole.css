@@ -1,0 +1,57 @@
+.ml-1{
+    margin-left: 1rem;
+}
+.mt-1{
+    margin-top: 1rem;}
+.mb-1{
+    margin-bottom: 1rem;}
+.pl-1{
+    padding-left: 1rem;
+}
+.pt-1{
+    padding-top: 1rem;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.text-align-center{
+    text-align: center;
+}
+.z-index-1{
+position: relative;
+z-index: 1;
+background-color: white;
+}
+.hover:hover{
+    color: #000;
+    background-color: rgb(212, 212, 212);
+}
+.height-30px{
+    height: 30px;
+}
+.display-block{
+    display: block;
+}
+.font-size-1rem{
+font-size: 1.5rem;
+}
+.position-sticky{
+    position: sticky;
+}
+.active{  
+    background-color: rgb(231, 231, 231);
+}
+.flex{
+    display: flex;
+}
+.justify-end{
+    justify-content: end;
+}
+
+.border-radius-20{
+    border-radius: 20px;
+}
+.text-decor-none{
+    text-decoration: none;
+}
+

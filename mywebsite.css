@@ -1,0 +1,911 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+* {
+    box-sizing: border-box
+}
+#navbar ul li a {
+  cursor: pointer;
+}
+:root {
+    --color-1: #186cb8;
+    --color-2: #2a9a9f;
+    --color-3: #f1b211;
+    --color-4: #e83611;
+    --color-5: #f9002f;
+}
+
+/* Display flex class here  */
+.flex {
+    display: flex;
+}
+
+/* navigation bar css starts from here */
+/* Hide scrollbar for all browsers */
+body {
+
+    overflow: hidden;
+    /* For Firefox */
+    overflow: auto;
+    /* Enable scrolling */
+    scroll-behavior: smooth;
+        /* Add this line for smooth scrolling */
+}
+
+/* Hide scrollbar for Webkit browsers (e.g., Chrome, Safari) */
+body::-webkit-scrollbar {
+    width: 0;
+    /* Set the width to 0 */
+}
+
+/* Optional: Style the scrollbar track (background) */
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Optional: Style the scrollbar thumb (handle) */
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+/* logo image  */
+#logoimg {
+    margin-left: 6px;
+    margin-top: 8px;
+    width: 50px;
+    border-radius: 30px;
+    height: 50px;
+    transition: all 1s;
+}
+
+#logoimg:hover {
+    animation: rotate 1s linear infinite;
+    /* transform: rotate(360deg); */
+}
+
+#name {
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: rgb(132, 0, 255);
+    margin-left: 12px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#name:hover::before{
+    content: "";
+    position: absolute;
+    /* border-radius: 20px; */
+    /* border: 1px solid rgb(0, 0, 0); */
+    box-shadow: 0 0 9px rgb(0, 0, 0);
+    top: 0;
+    left:0;
+    background: linear-gradient(45deg,white, yellow, rgb(255, 0, 0), black, rgb(145, 255, 0),black, blue, pink, aqua, rgb(3, 255, 32), purple, rgb(170, 0, 255), black ,rgb(186, 52, 52),rgb(90, 123, 255), blue, rgb(0, 0, 134), black);
+    background-size: 400%;
+    width: calc(100%);
+    height: calc(100%);
+    z-index: -1;
+    animation: anime 20s linear infinite;
+   
+}
+#namecon{
+    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(81, 0, 255));
+
+    -webkit-background-clip: text;
+
+}
+
+#navbar {
+    z-index: 10;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    position: sticky;
+    padding: -6px 9px;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 4px 5px black;
+
+}
+
+#navbar::before {
+    content: "";
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0px 20px;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    padding: 9px 0px;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+/* Navbar end here */
+
+
+/* home section starts from here */
+.h-primary {
+
+    /* width: 150px; */
+    /* display:flex; */
+    display: flex;
+    cursor: pointer;
+    margin-left: 100px;
+    /* justify-content: center; */
+    font-size: 2.8rem;
+    padding: 13px 35px;
+    /* justify-content: center; */
+    text-align: center;
+    transition: all 1s;
+}
+
+.name1 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.h-primary:hover {
+    border-radius: 33px;
+    color: rgb(255, 0, 0);
+    /* background-color: rgb(228, 154, 249); */
+}
+
+.wrapper {
+    background: #000;
+    line-height: 1;
+    min-height: 100%;
+    display: grid;
+    place-items: center;
+    min-height: calc(100vh - 16px);
+}
+
+#develper {
+    /* text-transform: uppercase; */
+    /* background: linear-gradient(219deg, 
+    var(--color-1) 19%, 
+    transparent 19%,transparent 20%, 
+    var(--color-2) 20%, var(--color-2)  39%,
+    transparent 39%,transparent 40%, 
+    var(--color-3) 40%,var(--color-3) 59% ,
+    transparent 59%,transparent 60%, 
+    var(--color-4) 60%, var(--color-4) 79%,
+    transparent 79%, transparent 80%, 
+    var(--color-5) 80%); */
+    background: linear-gradient(90deg, rgb(255, 0, 183), rgb(0, 187, 255));
+    /* background-clip: text; */
+    -webkit-background-clip: text;
+    /* color: transparent; */
+    /* transition: background 1s; */
+}
+#develper:hover{
+    -webkit-background-clip: text;
+    background: linear-gradient(90deg, rgb(0, 187, 255), rgb(255, 0, 183));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/* #con:hover{
+  
+    color: transparent
+} */
+
+#con {
+    padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    /* background: radial-gradient(circle at 1.4% 1.4% ,var(--color-1) .8%,transparent  .8% ), 
+      radial-gradient(circle at 5.5% 3%,var(--color-2) .45% ,transparent .45% ), 
+      radial-gradient(circle at 2.5% 3.5%,var(--color-3) .5% ,transparent .5% ), 
+      radial-gradient(circle at 4.5% 1.2%,var(--color-4) .25%,transparent .25% ),
+  
+      radial-gradient(circle at 98% 98% ,var(--color-1) .8%,transparent  .8% ), 
+      radial-gradient(circle at 95% 95%,var(--color-2) .45% ,transparent .45% ), 
+      radial-gradient(circle at 94.5% 97.5%,var(--color-3) .5% ,transparent .5% ), 
+      radial-gradient(circle at 98.5% 95.5%,var(--color-4) .25%,transparent .25% ); */
+    /* color: hsl(325, 100%, 50%); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#home {
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    justify-content: center;
+    height: 811px;
+    width: 100%;
+}
+/* #home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--background-url);
+} */
+/* Add any other styles you want for the ::before pseudo-element */
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 875px;
+    width: 100%;
+    transition: all 2s ease-in-out;
+    background-image: var(--background-url);
+    background-repeat: no-repeat; /* Added line to prevent image repeating */
+    background-position: center center; /* Added line to center the image */
+    background-size: cover;
+    /* background: url('background2.jpg') no-repeat center center/cover; */
+    /* opacity: 0.9; */
+}
+.home{
+    /* content: ""; */
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 950px;
+    width: 100%;
+    /* background: url(background2.jpg) no-repeat center center/cover; */
+    /* opacity: 0.9; */
+}
+
+#home p {
+    font: 1em sans-serif;
+    font-weight: bolder;
+    padding: 9px;
+    margin: 9px 0px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+#home p:hover{
+    color: rgb(255, 255, 255);
+}
+
+.photo {
+    /* width: 100%;
+    height: 100%; */
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform: translateZ(0); /* Apply translateZ(0) for better performance */
+  }
+
+  .photo:hover,.p:active {
+    transform: rotateY(180deg);
+  }
+ 
+  .photo-back {
+    background-color: #000000;
+    transform: rotateY(180deg);
+  }
+.pageimg {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    backface-visibility: hidden;
+    background: url('logoimg1.jpg') no-repeat center center/cover;
+    /* margin-left: 100px; */
+    border-radius: 100px;
+    /* transition: all 1s; */
+}
+.photo-container {
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+  }
+.photo-front,
+.photo-back {
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-color: black;
+    /* height: 100%;
+    width: 100%; */
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+}
+.blackback{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+}
+
+.photo-container::after,
+.mainimg::before {
+    content: "";
+    /* margin-left: 100px; */
+    position: absolute;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 9px rgb(0, 0, 0);
+    border-radius: 200px;
+    top: -5px;
+    left: -5px;
+    background: linear-gradient(360deg,black,black,blue,red ,black,black);
+    background-size: 400%;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    z-index: -1;
+    animation: rotate 2s linear infinite;
+}
+.photo-container::before,
+.mainimg::after {
+    content: "";
+    /* margin-left: 100px; */
+    position: absolute;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 9px rgb(0, 0, 0);
+    border-radius: 200px;
+    top: -10px;
+    left: -10px;
+    /* background-color: #f9002f; */
+    background: linear-gradient(360deg,black,black,black,rgb(0, 255, 110),white,white,rgb(255, 111, 0),black ,black,black);
+    background-size: 400%;
+    width: calc(100% + 18px);
+    height: calc(100% + 18px);
+    z-index: -1;
+    animation: rotatev 2s linear infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    /* 50%{
+        transform: rotate(360deg);
+    } */
+   100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotatev{
+    0%{
+        transform: rotate(360deg);
+    }
+    /* 50%{
+        transform: rotate(360deg);
+    } */
+    100%{
+       transform: rotate(0deg);
+    }
+}
+#dco {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#drow {
+    width: 100%;
+    display: flex;
+}
+
+#btns {}
+
+.designbtn {
+    position: relative;
+    border-radius: 5px;
+    margin: 0px 9px;
+    border-radius: 5px;
+    background-color: blue;
+    padding: 0px 15px;
+    margin: 19px;
+    font: 1em sans-serif;
+    border: 0px solid;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.5s;
+}
+
+
+.designbtn::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(145, 255, 0), blue, pink, aqua, rgb(3, 255, 32), purple, rgb(170, 0, 255), rgb(186, 52, 52), rgb(0, 0, 134), black);
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 6px black;
+    background-size: 400%;
+    border-radius: 5px;
+    top: -2.5px;
+    left: -3px;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    z-index: -1;
+    animation: anime 20s linear infinite;
+
+}
+
+
+@keyframes anime {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.designbtn:hover {
+    background-color: rgb(23, 67, 52);
+    font-size: larger;
+    /* border: 2px solid red; */
+    width: 150px;
+    height: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    animation: uanime;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes uanime {
+    0% {
+        box-shadow: 0px 0px 33px red;
+
+        border-top: 2px solid red;
+
+    }
+
+    25% {
+        box-shadow: 0px 0px 33px rgb(34, 255, 0);
+        background-color: rgb(14, 0, 107);
+        border-left: 2px solid rgb(0, 47, 255);
+
+    }
+
+    50% {
+        box-shadow: 0px 0px 33px rgb(0, 255, 229);
+        background-color: rgb(63, 0, 63);
+        border-bottom: 2px solid rgb(221, 0, 255);
+
+    }
+
+    75% {
+        box-shadow: 0px 0px 33px rgb(47, 0, 255);
+        background-color: rgb(45, 90, 0);
+        border-right: 2px solid rgb(0, 255, 42);
+    }
+
+    100% {
+        box-shadow: 0px 0px 33px rgb(255, 0, 221);
+        background-color: rgb(0, 68, 68);
+        border-top: 2px solid rgb(0, 255, 229);
+    }
+}
+
+.designbtn a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* .designbtn:hover {
+    border: none;
+  background: none;
+} */
+
+
+#section1 {
+    cursor: pointer;
+
+    background-color: rgb(93, 93, 93);
+    margin-top: 44px;
+    border-radius: 11px;
+    text-align: center;
+    /* border: 2px solid black; */
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin-left: 9px;
+
+}
+
+
+#section1::before {
+    content: "";
+    border-radius: 11px;
+    position: absolute;
+    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(145, 255, 0), blue, pink, aqua, rgb(3, 255, 32), purple, rgb(170, 0, 255), rgb(186, 52, 52), rgb(0, 0, 134), black);
+    top: -4px;
+    left: -5px;
+    z-index: -1;
+    border: 1px solid white;
+    box-shadow: 0 0 9px black;
+    background-size: 400%;
+    width: calc(100% + 7px);
+    height: calc(100% + 7px);
+    animation: anime 20s linear infinite;
+}
+
+#contact {
+    font-size: large;
+    text-decoration: underline;
+}
+
+#watsapp {
+
+    font-size: 1rem;
+}
+
+#no {
+    text-decoration: none;
+}
+
+#ad {
+    display: flex;
+
+    justify-content: space-between;
+    border: 2px solid red;
+
+}
+
+#h10 {
+    text-decoration: underline;
+
+}
+
+#business {
+    cursor: pointer;
+
+    background-color: rgb(242, 255, 4);
+    margin-top: 44px;
+    border-radius: 11px;
+    text-align: center;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    font-size: medium;
+    transition: all 1s;
+
+    border: 2px solid purple;
+}
+
+/* #business:hover{
+    color: aqua;
+
+} */
+
+/* FOOTER CSS STARTS FROM HERE  */
+
+.footercontainer {
+    width: 95%;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    /* z-index: -2; */
+
+}
+
+.items-center {
+    align-items: center;
+}
+
+.sm\:flex-row {
+    flex-direction: row;
+}
+
+
+.text-gray-600 {
+    --tw-text-opacity: 1;
+    color: rgba(75, 85, 99, var(--tw-text-opacity));
+}
+
+
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.md\:justify-start {
+    justify-content: flex-start;
+}
+
+.text-gray-900 {
+    --tw-text-opacity: 1;
+    color: rgba(17, 24, 39, var(--tw-text-opacity));
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.w-10 {
+    width: 2.5rem;
+}
+
+.text-white {
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.text-white {
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.h-10 {
+    height: 2.5rem;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.bg-indigo-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
+}
+
+.ml-3 {
+    margin-left: 1.25rem;
+}
+
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.sm\:pl-4 {
+    padding-left: 1rem;
+}
+
+.sm\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.sm\:ml-4 {
+    margin-left: 1rem;
+}
+
+.sm\:mt-0 {
+    margin-top: 0;
+}
+
+.sm\:border-l-2 {
+    border-left-width: 2px;
+}
+
+.sm\:border-gray-200 {
+    --tw-border-opacity: 1;
+    border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+}
+
+.text-sm {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.sm\:ml-auto {
+    margin-left: auto;
+}
+
+/* .sm\:mt-0 {
+    margin-top: 0;
+} */
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.ml-1 {
+    margin-left: 0.25rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.w-5 {
+    width: 2rem;
+}
+
+.h-5 {
+    height: 2rem;
+}
+
+.border-top {
+    border-top: 2px solid rgb(121, 121, 121);
+    /* box-shadow:inset 0 0 9px black; */
+}
+
+.text-blue-500 {
+    color: blue;
+}
+.text-blue-500:hover {
+    position: relative;
+/* top: -7px; */
+/* width: 2.1rem;
+height: 2.1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}
+
+.text-skyblue-500 {
+    color: rgb(0, 132, 255);
+}
+.text-skyblue-500:hover {
+    /* width: 2.1rem;
+    height: 2.1rem; */
+    position: relative;
+    /* top: -7px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+   background-color: rgb(0, 132, 255);
+}
+
+.text-red-500 {
+    color: rgb(210, 30, 162);
+
+}
+.text-red-500:hover {
+    /* width: 2.1rem;
+    height: 2.1rem; */
+    position: relative;
+    /* top: -7px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+      background:linear-gradient(200deg,rgb(255, 0, 255),rgb(158, 0, 158),rgb(255, 0, 166),rgb(255, 0, 166),red,yellow,yellow);
+
+}
+
+.text-green-500 {
+    color: rgb(0, 191, 0);
+    /* background-color: green; */
+}
+.text-green-500:hover {
+    /* width: 2.1rem;
+    height: 2.1rem; */
+position: relative;
+/* top: -7px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(2, 208, 2);
+}
+
+.display-block {
+    display: block;
+}
+
+/* .hover:hover {
+    color: rgb(0, 255, 255) */
+        /* background-color: darkgrey; */
+        /* border-radius: 9px; */
+/* } */
+
+#copyright {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px 2px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#copyright1 {
+    overflow: hidden;
+    transition: all 1s;
+    animation-name: harry;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes harry {
+    0% {
+        /* margin-left: 0px; */
+        color: red;
+    }
+
+    25% {
+        color: aqua;
+    }
+
+    50% {
+        color: blue;
+        /* font-size: larger; */
+    }
+
+    75% {
+        color: rgb(200, 0, 255);
+    }
+
+    100% {
+        /* margin-left: 1410px; */
+        color: green;
+    }
+}
+
+/* FOOTER ENDS HERE ---------------------------------- */

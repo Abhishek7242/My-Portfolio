@@ -1,0 +1,88 @@
+#navbar #potraitNav {
+  display: none;
+}
+#navbar #hamburgur {
+  display: none;
+}
+body{
+  background-color: rgb(0, 0, 36);
+}
+@media only screen and (max-width: 960px) {
+  #navbar ul {
+    padding: 0px 0px;
+    padding-left: 10px;
+  }
+  #navbar #hamburgur {
+  display: flex;
+      right: 0;
+    position: absolute;
+}
+.name1 {
+    display: flex;
+    flex-direction: column;
+}
+#develper {
+  align-items: start;
+    flex-direction: column;
+
+}
+  #dco {
+    width: 500px;
+  }
+  .name1 {
+    margin: 0;
+  }
+  .h-primary {
+    margin-left: 0;
+  }
+  #navbar #verticalNav {
+    display: none;
+  }
+  #navbar #potraitNav {
+    left: -400px;
+    display: none;
+    position: absolute;
+    top: 0;
+    padding: 6px 0px 23px 0px;
+    background: rgba(0, 0, 0, 0.424);
+    flex-direction: column;
+    height: 100vh;
+    transition: left 0.4s ease-in-out;
+  }
+  #navbar #potraitNav .wrongBtn{
+    padding: 18px 0;
+
+  }
+  #navbar #potraitNav .wrongBtn a{
+display: flex;
+justify-content: end;
+  }
+  #navbar #potraitNav li {
+    padding: 10px 50px;
+}
+
+.about-photo-container {
+    width: 280px;
+    height: 280px;
+    
+}
+.about-blackback {
+  width: 280px;
+    height: 280px;
+
+}
+.about-photo-front, .about-photo-back {
+    width: 280px;
+    height: 280px;
+}
+/* Additional responsive styles */
+}
+#navbar #potraitNav li:hover {
+      box-shadow: rgba(255, 255, 255, 0.09) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px,
+        rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(255, 255, 255, 0.09) 0px 16px 8px,
+        rgba(255, 255, 255, 0.09) 0px 32px 16px;
+  }
+#navbar #potraitNav a:hover {
+    color: white;
+   background-color: transparent;
+  }

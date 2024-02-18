@@ -1,0 +1,132 @@
+#AboutMe{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: rgb(0, 0, 36);
+    color: white;
+}
+
+#aboutImg{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin-top: 77px;
+    align-items: top;
+    justify-content: center;
+}
+#aboutText{
+    /* background-color: white;
+    color: black; */
+    border-radius: 13px;
+    margin-right: 14px;
+box-shadow: rgba(46, 56, 240, 0.4) -5px 5px,
+        rgba(65, 46, 240, 0.3) -10px 10px,
+        rgba(85, 46, 240, 0.2) -15px 15px,
+        rgba(88, 46, 240, 0.1) -20px 20px,
+        rgba(85, 46, 240, 0.05) -25px 25px,rgba(8, 0, 255, 0.4) 4px -4px 30px;
+    flex-direction: column;
+    display: flex;
+    /* align-items: center; */
+    justify-content: top;
+    height: 100%;
+    width: 50%;
+
+}
+
+#aboutText p{
+  text-align: justify;
+padding:0 32px;
+}
+#aboutMeHeading{
+    margin: 19px 0 ;
+    padding-left: 32px;
+}
+#aboutMeHeading h2{
+    margin: 18px 0;
+  font-size: 52px;
+}
+#aboutMeHeading h3{
+    margin: 9px 0;
+  font-size: 27px;
+}
+
+.about-photo-container {
+    width: 350px;
+    height: 350px;
+    perspective: 1000px;
+}
+.about-pageimg {
+    position: relative;
+    border-radius: 100%;
+        height: 350px;
+        width: 350px;
+    backface-visibility: hidden;
+    background: url('logoimg1.jpg') no-repeat center center/cover;
+    /* margin-left: 100px; */
+    /* transition: all 1s; */
+}
+.about-photo-front,
+.about-photo-back {
+    border-radius: 100%;
+        height: 350px;
+        width: 350px;
+    position: absolute;
+    background-color: black;
+    /* height: 100%;
+    width: 100%; */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #ffffff;
+}
+.about-blackback {
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+}
+  .about-photo-back {
+      background-color: #000000;
+      transform: rotateY(180deg);
+  }
+.about-photo-container::after,
+.mainimg::before {
+    content: "";
+    /* margin-left: 100px; */
+    position: absolute;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 9px rgb(0, 0, 0);
+    border-radius: 200px;
+    top: -5px;
+    left: -5px;
+    /* background: linear-gradient(360deg, black, black, blue, red, black, black); */
+    background-size: 400%;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    z-index: -1;
+    /* animation: rotate 2s linear infinite; */
+    box-shadow: rgb(0, 81, 255) 0px 0px 10px 4px;
+}
+
+.about-photo-container::before,
+.mainimg::after {
+    content: "";
+    /* margin-left: 100px; */
+    position: absolute;
+    border: 1px solid rgb(0, 0, 0);
+    /* box-shadow: 0 0 9px rgb(0, 0, 0); */
+    border-radius: 200px;
+    top: -10px;
+    left: -10px;
+    /* background-color: #f9002f; */
+    /* background: linear-gradient(360deg, black, black, black, rgb(0, 255, 110), white, white, rgb(255, 111, 0), black, black, black); */
+    background-size: 400%;
+    width: calc(100% + 18px);
+    height: calc(100% + 18px);
+    z-index: -1;
+    /* animation: rotatev 2s linear infinite; */
+    box-shadow: rgba(0, 81, 255, 0.56) 0px 0px 70px 22px;
+}
