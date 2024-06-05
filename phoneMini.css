@@ -115,7 +115,7 @@ width: 90%;
   gap: 5px;
 }
 #skills {
-    height: 600px;
+/*     height: 600px; */
 }
 #technicalBox div span::before {
    font-size: 11px;
