@@ -95,7 +95,9 @@
     font-size: 29px;
   }
   #skills {
-    height: 600px;
+/*     height: 600px;
+    */
+        min-height: 90vh;
   }
   #technicalBox div span::before {
     font-size: 11px;
