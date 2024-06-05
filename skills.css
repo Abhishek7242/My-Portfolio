@@ -1,0 +1,147 @@
+#skills{
+      border-top: 2px solid blue;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(0, 0, 36);
+  color: white;
+}
+#skillsBox{
+    display: flex;
+    width: 100%;
+    min-height: 90vh;
+}
+#skillsBox>div{
+    min-height: 100%;
+  width: 50%;
+  position: relative;
+  padding:0 22px;
+  /* border: 2px solid red; */
+}
+#skillsHeading{
+      margin: 18px 0;
+  font-size: 52px;
+}
+#technicalBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#technicalBox h4{
+    align-self: center;
+    font-size: 30px;
+}
+#technicalBox h5{
+    font-size: 17px;
+}
+#technicalBox div span{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background-color: rgb(27, 13, 78);
+    height: 4px;
+}
+#technicalBox div span::after{
+    content: "";
+    text-align: right; 
+    display: flex; /* Use flex container */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;
+    position: absolute;
+    box-shadow: 0px 0px 22px 6px blue;
+    display: inline-block;
+    width: var(--box-width);
+    background-color: rgb(43, 0, 255);
+    height: 4px;
+    z-index: 1;
+}
+#technicalBox div span::before{
+    content: attr(data-width)'%';
+    text-align: right; 
+  top: -25px;
+  left: 14px;
+  display: flex; /* Use flex container */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start;
+  position: absolute;
+  /* box-shadow: 0px 0px 22px 6px rgb(255, 0, 0); */
+  display: inline-block;
+  width: var(--box-width);
+  /* background-color: rgb(255, 0, 0); */
+  height: 4px;
+  z-index: 1;
+}
+
+#professionalBox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#professionalBox h4{
+    font-size: 30px;
+    
+}
+#professionalBox h5{
+    font-size: 19px;
+}
+#professionalBox>div{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#professionalBox .professionalInnerBox span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 1000px;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+}
+.parentBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.parentBox h5{
+ margin: 15px 0;
+}
+#professionalBox .professionalInnerBox {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    z-index: 1;
+    --start-color: rgb(58, 46, 128); /* Set the default start color */
+    --end-color: rgb(34, 0, 255);
+    background-color: rgb(0, 255, 102);
+}
+
+#professionalBox .professionalInnerBox::after {
+ content: "";
+    /* margin-left: 100px; */
+    position: absolute;
+    box-shadow: 0 0 50px 9px rgb(0, 4, 255);
+    border-radius: 200px;
+    top: -5px;
+    left: -5px;
+  background: conic-gradient(
+        var(--start-color) 0%, 
+        var(--start-color) calc(100% - var(--box-width)), 
+        var(--end-color) 0%, 
+        var(--end-color) 100%
+    );
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    z-index: -10;
+}

@@ -1,0 +1,150 @@
+@media only screen and (max-width: 360px){
+#home {
+
+    justify-content: start;
+    padding-top: 63px;
+  height: 400px;
+}
+#home p{
+display: none;
+  
+}
+#home::before {
+    
+    height: 475px;
+   
+}
+    .photo-container {
+        position: absolute;
+        right: 12%;
+        top: 11%;
+        width: 100px;
+        height: 100px;
+        perspective: 1000px;
+    }
+    .photo-front, .photo-back {
+   width: 100px;
+    height: 100px;
+}
+.blackback {
+   width: 100px;
+    height: 100px;
+}
+.name1 {
+    font-size: 1.4rem;
+    z-index: 1;
+    
+}
+#develper {
+
+    font-size: 1.5rem;
+    
+}
+#dco {
+width: 90%;
+   
+}
+#con {
+    padding: 15px;
+   
+}
+#AboutMe {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+    background-color: rgb(0, 0, 36);
+    color: white;
+}
+
+#aboutMeHeading h3 {
+    font-size: 14px;
+}
+#aboutText p {
+    margin-top: 22px;
+    font-size: 10px;
+    margin-top: 6px;
+}
+
+#myServicesBox div {
+     padding: 0 6px;
+    font-size: 10px;
+
+    width: 180px;
+
+}
+#skillsHeading {
+    font-size: 30px;
+}
+#technicalBox h4 {
+    font-size: 18px;
+}
+#professionalBox h4 {
+    font-size: 18px;
+}
+#technicalBox h5 {
+    font-size: 9px;
+}
+
+#professionalBox h5 {
+    font-size: 10px;
+}
+
+#professionalBox .professionalInnerBox span {
+   height: 42px;
+   width: 42px;
+    font-size: 12px;
+
+}
+#professionalBox .professionalInnerBox {
+       height: 40px;
+   width: 40px;
+  
+}
+
+#professionalBox .professionalInnerBox::after {
+    
+    top: -3px;
+    left: -3px;
+}
+    #projectSection h2 {
+    font-size: 29px;
+}
+
+#professionalBox>div {
+  gap: 5px;
+}
+#skills {
+    height: 600px;
+}
+#technicalBox div span::before {
+   font-size: 11px;
+}
+#aboutImg {
+right: 0;
+top: 50px;
+    position: absolute;
+}
+#aboutMeHeading h2 {
+    font-size: 23px;
+}
+#aboutText {
+margin-left: 19px;
+margin-right: 12px;
+    width: 100%;
+}
+.about-photo-container {
+    width: 50px;
+    height: 50px;
+}
+.about-blackback {
+  width: 50px;
+    height: 50px;
+
+}
+.about-photo-front, .about-photo-back {
+  width: 50px;
+    height: 50px;
+}
+
+}

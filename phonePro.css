@@ -1,0 +1,135 @@
+.name1 {
+
+   gap: 12px;
+}
+
+@media only screen and (max-width: 550px) {
+
+
+
+
+#dco {
+    width: 60%;
+}
+.name1 {
+font-size:2.2rem;
+display: flex;
+flex-direction: column;
+}
+#develper {
+    padding: 13px 15px;
+    font-size:2rem;
+    
+   align-items: start;
+    flex-direction: column;
+
+}
+.photo-front, .photo-back {
+   width: 150px;
+    height: 150px;
+}
+.blackback {
+   width: 150px;
+    height: 150px;
+}
+.photo-container {
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+}
+#aboutImg {
+right: 0;
+top: 50px;
+    position: absolute;
+}
+#aboutText {
+margin-left: 39px;
+margin-right: 19px;
+    width: 100%;
+}
+.about-photo-container {
+    width: 100px;
+    height: 100px;
+}
+.about-blackback {
+  width: 100px;
+    height: 100px;
+
+}
+.about-photo-front, .about-photo-back {
+  width: 100px;
+    height: 100px;
+}
+
+#AboutMe{
+    position: relative;
+}
+
+#myServicesBox {
+  
+    justify-content: center;
+}
+#myServiceHeading {
+    font-size: 35px;
+}
+#myServicesBox div{
+    padding: 0 11px;
+  font-size: 13px;
+      width: 252px;
+    margin: 0 9px;
+        margin-bottom: 42px;
+}
+#skillsHeading {
+    font-size: 35px;
+}
+#technicalBox h4 {
+    font-size: 24px;
+}
+#professionalBox h4 {
+    font-size: 24px;
+}
+#technicalBox h5 {
+    font-size: 11px;
+}
+
+#professionalBox h5 {
+    font-size: 12px;
+}
+
+#professionalBox .professionalInnerBox span {
+   height: 80px;
+   width: 80px;
+}
+#professionalBox .professionalInnerBox {
+       height: 80px;
+   width: 80px;
+  
+}
+#professionalBox .professionalInnerBox::after {
+    
+    top: -4px;}
+
+    #projectSection h2 {
+    font-size: 29px;
+}
+.imgBox h3 {
+    font-size: 14px;
+}
+
+#projectSection {
+  
+    min-height: 100vh;
+}  
+#footer{
+    height: 200px;
+    padding: 22px 0;
+}
+.footercontainer{
+    align-items: center;
+    flex-direction: column;
+}
+.imgBox img {
+    width: 90%;
+    transition: transform 0.3s ease-in-out;
+}
+}
