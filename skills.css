@@ -13,7 +13,7 @@
 #skillsBox{
     display: flex;
     width: 100%;
-    min-height: 90vh;
+    min-height: 80vh;
 }
 #skillsBox>div{
     min-height: 100%;
