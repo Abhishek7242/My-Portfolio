@@ -572,7 +572,7 @@ body::-webkit-scrollbar-thumb {
 
 #contact {
     font-size: large;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 #watsapp {

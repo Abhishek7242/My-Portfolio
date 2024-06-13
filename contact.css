@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+#contact{
+ border-top: 2px solid blue;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 36);
+    color: white;
+       font-family: "Poppins", sans-serif;
+}
+
+#contactMainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contactHeading{
+    margin: 18px 0;
+    font-size: 52px;
+    color: white;
+}
+
+#contactFormOuterContainer{
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 40px; */
+    flex-wrap: wrap;
+    width: 80%;
+    padding:44px;
+    background-color: rgba(51, 0, 255, 0.176);
+    margin-bottom: 50px;
+    border-radius: 7px;
+}
+#contactFormDesc{
+    border-right: 2px solid blue;
+        width: 45%;
+    text-align: center;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    gap: 23px;
+}
+#contactFormDesc p{
+font-size: 14px;
+}
+
+.box{
+    position: relative;
+    width: 380px;
+    height: 500px;
+    background-color: rgb(0, 0, 30);
+border-radius: 8px;
+overflow: hidden;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    top:-50% ;
+    left:-50% ;
+        width: 380px;
+    height: 500px;
+    transform-origin:bottom right ;
+    background: linear-gradient(0deg,transparent,transparent,#00a2ff,#00a2ff,#00a2ff);
+z-index: 1;
+animation: animate 6s linear infinite;
+animation-delay: -3s; 
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top:-50% ;
+    left:-50% ;
+        width: 380px;
+    height: 500px;
+    transform-origin:bottom right ;
+    background: linear-gradient(0deg,transparent,transparent,#00a2ff,#00a2ff,#00a2ff);
+z-index: 1;
+animation: animate 6s linear infinite; 
+}
+.borderLine{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.borderLine::before{
+   content: '';
+    position: absolute;
+    top:-50% ;
+    left:-50% ;
+        width: 380px;
+    height: 500px;
+    transform-origin:bottom right ;
+    background: linear-gradient(0deg,transparent,transparent,#4000ff,#4000ff,#4000ff);
+z-index: 1;
+animation: animate 6s linear infinite;
+animation-delay: -1.5s;
+}
+.borderLine::after{
+   content: '';
+    position: absolute;
+    top:-50% ;
+    left:-50% ;
+        width: 380px;
+    height: 500px;
+    transform-origin:bottom right ;
+    background: linear-gradient(0deg,transparent,transparent,#4000ff,#4000ff,#4000ff);
+z-index: 1;
+animation: animate 6s linear infinite;
+animation-delay: -4.5s;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+.box form{
+   position: absolute;
+   inset: 4px;
+   background-color: rgb(0, 0, 36);
+   padding: 40px 50px;
+   z-index: 2;
+   flex-direction: column;
+
+}
+.box form h2 {
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+}
+.box form .inputBox{
+    position: relative;
+    /* width: 275px; */
+    margin-top: 35px;
+}
+.box form .inputBox input{
+    position: relative;
+    width: 100%;
+  padding: 20px 10px 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+
+}
+.box form .inputBox textarea{
+    position: relative;
+    width: 100%;
+  padding: 20px 10px 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+
+}
+.box form .inputBox span{
+    position: absolute;
+    left: 0;
+  padding: 20px 0px 10px;
+  pointer-events: none;
+  color: #8f8f8f;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+
+
+}
+.box form .inputBox input:valid ~ span,
+.box form .inputBox input:focus ~ span
+{
+  color: #fff;
+  font-size: 0.75em;
+  transform: translateY(-34px);
+
+
+}
+.box form .inputBox textarea:valid ~ span,
+.box form .inputBox textarea:focus ~ span
+{
+  color: #fff;
+  font-size: 0.75em;
+  transform: translateY(-34px);
+
+
+
+}
+
+.box form .inputBox i{
+    position: absolute;
+    left: 0;
+bottom: 0;
+width: 100%;
+height: 2px;
+background-color: #fff;
+border-radius: 4px;
+overflow: hidden;
+transition: 0.5s;
+pointer-events: none;
+}
+
+.box form .inputBox input:valid ~ i,
+.box form .inputBox input:focus ~ i
+{
+  height: 44px;
+
+}
+.box form .inputBox textarea:valid ~ i,
+.box form .inputBox textarea:focus ~ i
+{
+  height: 60px;
+
+}
+.box form .links{
+display: flex;
+width: 100%;
+justify-content: space-between;
+/* margin: 22px 0; */
+}
+
+.box form .links a{
+margin: 10px 0;
+font-size: 0.85em;
+color: #8f8f8f;
+text-decoration: none;
+}
+
+.box form .links a:hover,
+.box form .links a:nth-child(2)
+{
+color:#fff ;
+}
+
+#submit{
+border: none;
+outline: none;
+width: 100px;
+margin: 30px 2px;
+padding: 9px 25px;
+background-color: #fff;
+cursor: pointer;
+border-radius: 4px;
+font-weight: 600;
+transition: all 0.4s ease-in-out;
+}
+
+/* .box form input[type="submit"]
+:active{
+    opacity: 0.8;
+} */
+#submit:hover{
+  background-color: #3b18ff;
+  box-shadow: 0 0 25px #1818ff;
+}
+
+@media only screen and (max-width: 990px){
+.box {
+    position: relative;
+    width: 300px;
+    height: 420px;
+   
+}
+.box form{
+    padding: 20px;
+}
+.box form h2{
+    font-size: 23px;
+}
+.box form .inputBox{
+    margin-top: 30px;
+}
+.box form .inputBox span {
+  
+    font-size: 0.7em;
+    
+}
+
+}
+@media only screen and (max-width: 750px){
+    #contactHeading {
+    font-size: 29px;
+}
+}
+@media only screen and (max-width: 820px){
+    #contactFormOuterContainer {
+ 
+    width: 90%;
+    padding: 30px;
+
+}
+.box {
+    position: relative;
+    width: 260px;
+    height: 400px;
+   
+}
+.box form{
+    padding: 16px;
+}
+.box form h2{
+    font-size: 23px;
+}
+.box form .inputBox{
+    margin-top: 28px;
+}
+.box form .inputBox span {
+  
+    font-size: 0.6em;
+    
+}
+.box form .inputBox textarea {
+    position: relative;
+    width: 100%;
+    padding: 10px 5px 5px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.box form .inputBox textarea:valid ~ i,
+.box form .inputBox textarea:focus ~ i
+{
+  height: 50px;
+
+}
+#contactFormDesc p {
+    font-size: 10px;
+}
+}
+@media only screen and (max-width: 610px){
+    #contactFormOuterContainer {
+ 
+    width: 95%;
+    padding:20px 10px;
+ 
+}
+#contactFormDesc {
+    border-right: 2px solid blue;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 10px;
+    gap: 23px;
+}
+
+#contactFormDesc h2{
+    font-size: 18px;
+}
+#contactFormDesc p {
+    font-size: 9px;
+}
+}
+@media only screen and (max-width: 500px){
+    #contactFormOuterContainer {
+ 
+    width: 92%;
+    padding:20px 10px;
+ 
+}
+
+    #contactFormDesc {
+        border-right: none;
+        width: 90%;
+      
+        padding: 12px 10px;
+        margin-bottom: 22px;
+      
+    }
+#contactFormDesc h2{
+    font-size: 18px;
+}
+#contactFormDesc p {
+    font-size: 9px;
+}
+.box{
+    width: 300px;
+    height: 420px;
+}
+.box form{
+
+   padding: 40px 30px;
+
+
+}
+.box form .inputBox{
+
+    margin-top: 35px;
+}
+    .box form .inputBox span {
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width: 350px){
+    #contactFormOuterContainer {
+ 
+    width: 98%;
+    padding:20px 0px;
+ 
+}
+
+    #contactFormDesc {
+        border-right: none;
+        width: 90%;
+      
+        padding: 12px 10px;
+        margin-bottom: 22px;
+      
+    }
+#contactFormDesc h2{
+    font-size: 18px;
+}
+#contactFormDesc p {
+    font-size: 9px;
+}
+.box{
+    width: 300px;
+    height: 420px;
+}
+.box form{
+
+   padding: 40px 10px;
+
+
+}
+.box form .inputBox{
+
+    margin-top: 35px;
+}
+    .box form .inputBox span {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 328px){
+    .box{
+    width: 280px;
+}
+}
+@media only screen and (max-width: 300px){
+    .box{
+    width: 250px;
+}
+}
