@@ -23,6 +23,11 @@ function sendEmail() {
         response => {
             alert("Email sent successfully!");
             console.log("Email sent:", response);
+            document.getElementById('username').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+
+          
         }
     ).catch(
         error => {
@@ -30,6 +35,8 @@ function sendEmail() {
             console.error("Failed to send email:", error);
         }
     );
+
+
 }
 
 form.addEventListener('submit', (e) => {
