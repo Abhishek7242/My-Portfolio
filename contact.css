@@ -246,6 +246,47 @@ font-size: 0.85em;
 color: #8f8f8f;
 text-decoration: none;
 }
+/* Webkit browsers (Chrome, Safari, Edge) */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    appearance: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    color: inherit !important;
+    border: 1px solid inherit !important;
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: inherit !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+
+/* Mozilla Firefox */
+input:-moz-autofill,
+textarea:-moz-autofill,
+select:-moz-autofill {
+    appearance: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    color: inherit !important;
+    border: 1px solid inherit !important;
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+    -moz-text-fill-color: inherit !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+
+/* Microsoft Edge (non-Chromium) */
+input:-ms-autofill,
+textarea:-ms-autofill,
+select:-ms-autofill {
+    appearance: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    color: inherit !important;
+    border: 1px solid inherit !important;
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+    -ms-text-fill-color: inherit !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+}
 
 .box form .links a:hover,
 .box form .links a:nth-child(2)
@@ -279,7 +320,7 @@ transition: all 0.4s ease-in-out;
 .box {
     position: relative;
     width: 300px;
-    height: 420px;
+    height: 430px;
    
 }
 .box form{
@@ -313,7 +354,7 @@ transition: all 0.4s ease-in-out;
 .box {
     position: relative;
     width: 260px;
-    height: 400px;
+    height: 430px;
    
 }
 .box form{
@@ -405,7 +446,7 @@ transition: all 0.4s ease-in-out;
 }
 .box{
     width: 300px;
-    height: 420px;
+    height: 450px;
 }
 .box form{
 

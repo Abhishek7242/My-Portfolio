@@ -13,6 +13,11 @@
   #professionalBox .professionalInnerBox span {
     font-size: 12px;
   }
+  #skillsBox {
+    display: flex;
+    width: 100%;
+    min-height: 70vh;
+}
   .photo-container {
     width: 100px;
     height: 100px;
@@ -95,11 +100,13 @@
     font-size: 29px;
   }
   #skills {
-/*     height: 600px;
-    */
-        min-height: 90vh;
+    /* height: 600px;
+     */
+     min-height: 90vh;
   }
   #technicalBox div span::before {
     font-size: 11px;
   }
 }
+        /* Password: "BB8B62F1EE6DD4A4BA099655B6B1041A742D",
+        // Password: "393D465C6704C3E4C7C2B86CCA5FB7B22B5E", */
